@@ -1,0 +1,81 @@
+@font-face {
+  font-family: 'D-DIN';
+  src: url('../fonts/D-DIN.eot');
+  src: url('../fonts/D-DIN.woff2') format('woff2'),
+       url('../fonts/D-DIN.woff') format('woff'),
+       url('../fonts/D-DIN.ttf') format('truetype'),
+       url('../fonts/D-DIN.svg#D-DIN') format('svg'),
+       url('../fonts/D-DIN.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+/******************************************************************************
+                               background
+*******************************************************************************/
+.fix-bg {
+  /* Create the parallax scrolling effect */
+    position: fixed;
+    z-index:-1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+#full-bg {
+  background-color: #465983;
+  height: 100vh;
+
+}
+
+#mid-bg {
+  background-color: #5F78B1;
+  height: 90%;
+  width: 94%;
+  margin-top: -95vh;
+  margin-left: auto;
+  margin-right: auto;
+  padding:0;
+}
+
+
+#inner-bg {
+  background-color: #465983;
+  height: 86.6%;
+  width: 92.4%;
+  margin-top: -88.4vh;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*********************************************
+            left fix content
+**********************************************/
+.right-content{
+  border: 1px solid green;
+  width: 30%;
+}
+.right-content p{
+  font-family: 'D-DIN', Arial, sans-serif;
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 40px;
+  color: white;
+  width: 80%;
+  border: 1px solid red;
+  margin: 30px auto auto 40px;
+
+}
+
+/******************************************************************************
+                           right scrolling content
+*******************************************************************************/
+.text {
+	width: 50%;
+  height:1000px;background-color:white;font-size:36px;
+  margin-left: 40vw;
+}
