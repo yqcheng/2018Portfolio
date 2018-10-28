@@ -1,11 +1,23 @@
 @font-face {
   font-family: 'D-DIN';
-  src: url('../fonts/D-DIN.eot');
-  src: url('../fonts/D-DIN.woff2') format('woff2'),
-       url('../fonts/D-DIN.woff') format('woff'),
-       url('../fonts/D-DIN.ttf') format('truetype'),
-       url('../fonts/D-DIN.svg#D-DIN') format('svg'),
-       url('../fonts/D-DIN.eot?#iefix') format('embedded-opentype');
+  src: url('../fonts/dinRegular/D-DIN.eot');
+  src: url('../fonts/dinRegular/D-DIN.woff2') format('woff2'),
+       url('../fonts/dinRegular/D-DIN.woff') format('woff'),
+       url('../fonts/dinRegular/D-DIN.ttf') format('truetype'),
+       url('../fonts/dinRegular/D-DIN.svg#D-DIN') format('svg'),
+       url('../fonts/dinRegular/D-DIN.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN-Light';
+  src: url('../fonts/dinLight/DIN-Light.eot');
+  src: url('../fonts/dinLight/DIN-Light.woff2') format('woff2'),
+       url('../fonts/dinLight/DIN-Light.woff') format('woff'),
+       url('../fonts/dinLight/DIN-Light.ttf') format('truetype'),
+       url('../fonts/dinLight/DIN-Light.svg#DIN-Light') format('svg'),
+       url('../fonts/dinLight/DIN-Light.eot?#iefix') format('embedded-opentype');
   font-weight: normal;
   font-style: normal;
 }
@@ -56,26 +68,70 @@ body {
             left fix content
 **********************************************/
 .right-content{
-  border: 1px solid green;
+  border: 1px solid #465983; /*DO NOT DELETE*/
   width: 30%;
 }
-.right-content p{
+
+.right-content-container{
   font-family: 'D-DIN', Arial, sans-serif;
+  color: white;
+  width: 80%;
+  /*border: 1px solid yellow;*/
+  margin: 30px auto auto 40px;
+}
+.right-content .heading h1{
   font-size: 36px;
   font-weight: bold;
   line-height: 40px;
-  color: white;
-  width: 80%;
-  border: 1px solid red;
-  margin: 30px auto auto 40px;
-
+  /*border: 1px solid red;*/
+}
+.right-content .heading ul {
+  margin-top: 10px;
+}
+.right-content .heading ul li{
+  display: inline;
+  font-size: 12px;
+  font-weight: bold;
+  color:#465983;
+  background-color: white;
+  border-radius: 300px;
+  padding: 3px 8px;
+}
+.right-content .description{
+  margin-top: 40px;
+}
+.right-content .description .text-block{
+  margin-top: 20px;
+  /*border: 1px solid red;*/
+  font-size: 15px;
+  line-height: 18px;
+}
+.right-content .description .text-block h2{
+  font-weight: bold;
+  margin-bottom: 7px;
+}
+.right-content .description .text-block p {
+  font-family: 'DIN-Light', Arial, sans-serif;
+  opacity: 0.6;
 }
 
 /******************************************************************************
                            right scrolling content
 *******************************************************************************/
-.text {
-	width: 50%;
-  height:1000px;background-color:white;font-size:36px;
-  margin-left: 40vw;
+.right-scroll-content {
+	width: 57%;
+  height:1000px;
+  margin-left: 35vw;
+
+}
+
+.main-content {
+  overflow: hidden;
+  padding-top: 100px;
+}
+
+.main-content img{
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
 }
