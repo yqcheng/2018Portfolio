@@ -22,38 +22,25 @@
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'DIN-Light-Update';
-  src: url('../fonts/dinLightUpdate/DIN-Light.eot');
-  src: url('../fonts/dinLightUpdate/DIN-Light.woff2') format('woff2'),
-       url('../fonts/dinLightUpdate/DIN-Light.woff') format('woff'),
-       url('../fonts/dinLightUpdate/DIN-Light.ttf') format('truetype'),
-       url('../fonts/dinLightUpdate/DIN-Light.svg#DIN-Light') format('svg'),
-       url('../fonts/dinLightUpdate/DIN-Light.eot?#iefix') format('embedded-opentype');
-  font-weight: normal;
-  font-style: normal;
-}
-
 body {
   margin: 0;
 }
 
-/*a:link {
-    color: purple;
+a:link {
+    color: white;
     background-color: transparent;
     text-decoration: underline;
-    border: 1px solid red;
 }
 a:visited {
-    color: green;
+    color: #7F99D2;
     background-color: transparent;
     text-decoration: none;
 }
 a:hover {
-    color: red;
+    color: #E86B6B;
     background-color: transparent;
     text-decoration: underline;
-}*/
+}
 
 /******************************************************************************
                                background
@@ -93,22 +80,18 @@ a:hover {
   margin-right: auto;
 }
 
-/*********************************************
-            left fix content
-**********************************************/
+/******************************************************************************
+                               left fix content
+******************************************************************************/
 .left-content{
-  border: 1px solid #465983; /*DO NOT DELETE*/
-  width: 30%;
-  position: fixed;
-}
 
-.left-content-container{
+  width: 22%;
+  position: fixed;
   font-family: 'D-DIN', Arial, sans-serif;
   color: white;
-  width: 80%;
-  /*border: 1px solid yellow;*/
-  margin: 50px auto auto 40px;
+  margin: 70px auto auto 80px;
 }
+
 .left-content .heading h1{
   font-size: 36px;
   font-weight: bold;
@@ -117,11 +100,9 @@ a:hover {
 }
 .left-content .heading ul {
   margin-top: 10px;
-
-  height: 25px;
 }
 .left-content .heading ul li{
-  display: inline;
+  display: inline-block;
   font-size: 12px;
   font-weight: bold;
   color: #465983;
@@ -143,7 +124,7 @@ a:hover {
   margin-bottom: 7px;
 }
 .left-content .description .text-block p {
-  font-family: 'DIN-Light-Update', Arial, sans-serif;
+  font-family: 'DIN-Light', Arial, sans-serif;
   opacity: 0.6;
 }
 
@@ -171,27 +152,30 @@ a:hover {
 .main-content .section {
   margin-bottom: 100px;
   color: white;
-
 }
 
-.main-content .element-separator{
-  margin-bottom: 20px;
-}
 
 .main-content .section h1.title {
   font-size: 30px;
   font-family: 'D-DIN', Arial, sans-serif;
+  font-weight: bold;
   text-align: center;
-  border: 1px solid red;
+  margin-bottom: 20px;
 }
 
 .main-content .section p.caption {
-  font-family: 'DIN-Light-Update', Arial, sans-serif;
-  font-weight: 100;
+  font-family: 'DIN-Light', Arial, sans-serif;
+  font-weight: lighter;
   opacity: 0.9;
-  font-size: 20px;
+  font-size: 19px;
   line-height: 22px;
-  border: 1px solid red;
+  margin-bottom: 30px;
+}
+
+.section .video{
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
 }
 /******************************************************************************
                          Responsiveness Media Queries
