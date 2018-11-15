@@ -22,9 +22,38 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: 'DIN-Light-Update';
+  src: url('../fonts/dinLightUpdate/DIN-Light.eot');
+  src: url('../fonts/dinLightUpdate/DIN-Light.woff2') format('woff2'),
+       url('../fonts/dinLightUpdate/DIN-Light.woff') format('woff'),
+       url('../fonts/dinLightUpdate/DIN-Light.ttf') format('truetype'),
+       url('../fonts/dinLightUpdate/DIN-Light.svg#DIN-Light') format('svg'),
+       url('../fonts/dinLightUpdate/DIN-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 body {
   margin: 0;
 }
+
+/*a:link {
+    color: purple;
+    background-color: transparent;
+    text-decoration: underline;
+    border: 1px solid red;
+}
+a:visited {
+    color: green;
+    background-color: transparent;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+}*/
 
 /******************************************************************************
                                background
@@ -67,51 +96,54 @@ body {
 /*********************************************
             left fix content
 **********************************************/
-.right-content{
+.left-content{
   border: 1px solid #465983; /*DO NOT DELETE*/
   width: 30%;
+  position: fixed;
 }
 
-.right-content-container{
+.left-content-container{
   font-family: 'D-DIN', Arial, sans-serif;
   color: white;
   width: 80%;
   /*border: 1px solid yellow;*/
-  margin: 30px auto auto 40px;
+  margin: 50px auto auto 40px;
 }
-.right-content .heading h1{
+.left-content .heading h1{
   font-size: 36px;
   font-weight: bold;
   line-height: 40px;
   /*border: 1px solid red;*/
 }
-.right-content .heading ul {
+.left-content .heading ul {
   margin-top: 10px;
+
+  height: 25px;
 }
-.right-content .heading ul li{
+.left-content .heading ul li{
   display: inline;
   font-size: 12px;
   font-weight: bold;
-  color:#465983;
+  color: #465983;
   background-color: white;
   border-radius: 300px;
   padding: 3px 8px;
 }
-.right-content .description{
+.left-content .description{
   margin-top: 40px;
 }
-.right-content .description .text-block{
-  margin-top: 20px;
+.left-content .description .text-block{
+  margin-top: 10px;
   /*border: 1px solid red;*/
   font-size: 15px;
   line-height: 18px;
 }
-.right-content .description .text-block h2{
+.left-content .description .text-block h2{
   font-weight: bold;
   margin-bottom: 7px;
 }
-.right-content .description .text-block p {
-  font-family: 'DIN-Light', Arial, sans-serif;
+.left-content .description .text-block p {
+  font-family: 'DIN-Light-Update', Arial, sans-serif;
   opacity: 0.6;
 }
 
@@ -121,8 +153,8 @@ body {
 .right-scroll-content {
 	width: 57%;
   height:1000px;
-  margin-left: 35vw;
-
+  float: right;
+  margin-right: 8vw;
 }
 
 .main-content {
@@ -134,4 +166,98 @@ body {
   overflow: hidden;
   max-width: 100%;
   height: auto;
+}
+
+.main-content .section {
+  margin-bottom: 100px;
+  color: white;
+
+}
+
+.main-content .element-separator{
+  margin-bottom: 20px;
+}
+
+.main-content .section h1.title {
+  font-size: 30px;
+  font-family: 'D-DIN', Arial, sans-serif;
+  text-align: center;
+  border: 1px solid red;
+}
+
+.main-content .section p.caption {
+  font-family: 'DIN-Light-Update', Arial, sans-serif;
+  font-weight: 100;
+  opacity: 0.9;
+  font-size: 20px;
+  line-height: 22px;
+  border: 1px solid red;
+}
+/******************************************************************************
+                         Responsiveness Media Queries
+*******************************************************************************/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  /*.right-scroll-content{
+    display: none;
+  }*/
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  /*.right-scroll-content{
+    display: none;
+  }*/
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
 }
