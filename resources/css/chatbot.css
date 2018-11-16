@@ -163,6 +163,13 @@ a:hover {
   margin-bottom: 20px;
 }
 
+.main-content .section h2.sec-title{
+  font-size: 19px;
+  font-family: 'DIN-Light', Arial, sans-serif;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
 .main-content .section p.caption {
   font-family: 'DIN-Light', Arial, sans-serif;
   font-weight: lighter;
@@ -176,6 +183,14 @@ a:hover {
   display: block;
   margin-right: auto;
   margin-left: auto;
+}
+
+a.text_strong {
+  font-weight: 500;
+}
+
+.main-content {
+  margin-bottom: 140px;
 }
 /******************************************************************************
                          Responsiveness Media Queries
