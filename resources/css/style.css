@@ -1,0 +1,267 @@
+@font-face {
+  font-family: 'D-DIN';
+  src: url('../fonts/dinRegular/D-DIN.eot');
+  src: url('../fonts/dinRegular/D-DIN.woff2') format('woff2'),
+       url('../fonts/dinRegular/D-DIN.woff') format('woff'),
+       url('../fonts/dinRegular/D-DIN.ttf') format('truetype'),
+       url('../fonts/dinRegular/D-DIN.svg#D-DIN') format('svg'),
+       url('../fonts/dinRegular/D-DIN.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'DIN-Light';
+  src: url('../fonts/dinLight/DIN-Light.eot');
+  src: url('../fonts/dinLight/DIN-Light.woff2') format('woff2'),
+       url('../fonts/dinLight/DIN-Light.woff') format('woff'),
+       url('../fonts/dinLight/DIN-Light.ttf') format('truetype'),
+       url('../fonts/dinLight/DIN-Light.svg#DIN-Light') format('svg'),
+       url('../fonts/dinLight/DIN-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
+
+
+/******************************************************************************
+                               background
+*******************************************************************************/
+.fix-bg {
+  /* Create the parallax scrolling effect */
+    position: fixed;
+    z-index:-1;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+
+}
+#full-bg {
+  background-color: #FFFFFF;
+  height: 100vh;
+
+}
+
+/******************************************************************************
+                               left fix content
+******************************************************************************/
+/*****navigation*******/
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+li.navigation {
+  font-family: 'DIN-Light', Arial, sans-serif;
+  font-size: 19px;
+}
+
+.navigation a{
+  transition: border-bottom .4s ease;
+}
+
+.navigation a:hover{
+  border-bottom: 3px solid #6ac4c4;
+  font-weight: 600;
+
+}
+.left-content{
+  width: 22%;
+  position: fixed;
+  font-family: 'D-DIN', Arial, sans-serif;
+  color: black;
+  margin: 10px auto auto 80px;
+}
+
+.left-content .my-photo{
+  margin-top: 150px;
+  margin-bottom: 7px;
+}
+
+.left-content .my-photo img {
+  width: 50%;
+  border-radius: 360px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+
+}
+
+.left-content .my-intro h1{
+  font-family: 'D-DIN', Arial, sans-serif;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.left-content .my-intro p{
+  font-family: 'DIN-Light', Arial, sans-serif;
+  font-size: 19px;
+  opacity: 0.6;
+
+
+}
+
+.my-intro a.highlight-text{
+  color: #6ac4c4;
+  font-weight: bold;
+}
+
+
+
+/******************************************************************************
+                           right scrolling content
+*******************************************************************************/
+.right-scroll-content {
+	width: 60%;
+  height:1000px;
+  float: right;
+  margin-right: 8vw;
+  color: black;
+}
+
+.main-content {
+  overflow: hidden;
+  padding-top: 100px;
+  margin-bottom: 140px;
+}
+
+.main-content img{
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+}
+
+.main-content .section {
+  margin-bottom: 100px;
+  display: flex;
+  align-items: center;
+  transition: all .1s ease-in-out;
+}
+
+.main-content .section:hover {
+  transform: scale(1.02);
+}
+
+.main-content .section img{
+  height: 400px;
+  margin-left: 30px;
+}
+
+.main-content .section-text {
+  width: 55%;
+  margin-left: 60px;
+  font-family: 'D-DIN', Arial, sans-serif;
+}
+
+.main-content .section h1.project-title{
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+.main-content .section p{
+  font-size: 16px;
+  color: grey;
+  opacity: 0.6;
+  margin-bottom: 15px;
+}
+
+.section a.view {
+    color: #6ac4c4;
+    font-size: 16px;
+    background-color: #EFEFF6;
+    font-weight: bold;
+    padding: 5px 25px;
+    border-radius: 100px;
+    letter-spacing: 1px;
+    transition: all .1s ease-in-out;
+}
+
+.section a.view:hover {
+    color: white;
+    background-color: #6ac4c4;
+}
+
+/** floating card bg**/
+.section {
+  padding: 20px 50px;
+  background-color: white;
+  box-shadow: 1px 5px 15px 0 #DDDFE2;
+  border-radius: 29px;
+  margin: 20px;
+
+
+}
+
+/******************************************************************************
+                         Responsiveness Media Queries
+*******************************************************************************/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+  /*.right-scroll-content{
+    display: none;
+  }*/
+}
+
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+  /*.right-scroll-content{
+    display: none;
+  }*/
+}
+
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+/* Styles */
+}
+
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+/* Styles */
+}
+
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+/* Styles */
+}
+
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+/* Styles */
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+
+}
+
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+/* Styles */
+}
+
+/* iPhone 4 ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio : 1.5),
+only screen and (min-device-pixel-ratio : 1.5) {
+/* Styles */
+}
