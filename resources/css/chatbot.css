@@ -26,21 +26,7 @@ body {
   margin: 0;
 }
 
-a:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: underline;
-}
-a:visited {
-    color: #7F99D2;
-    background-color: transparent;
-    text-decoration: none;
-}
-a:hover {
-    color: #E86B6B;
-    background-color: transparent;
-    text-decoration: underline;
-}
+
 
 /******************************************************************************
                                background
@@ -83,13 +69,38 @@ a:hover {
 /******************************************************************************
                                left fix content
 ******************************************************************************/
-.left-content{
+/*****navigation*******/
+nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 
+}
+li.navigation {
+  font-family: 'DIN-Light', Arial, sans-serif;
+  font-size: 19px;
+}
+
+.navigation a{
+  transition: border-bottom .4s ease;
+  color: white;
+}
+
+.navigation a:hover{
+  border-bottom: 3px solid #E86B6B;
+  font-weight: 600;
+}
+
+.left-content{
   width: 22%;
   position: fixed;
   font-family: 'D-DIN', Arial, sans-serif;
   color: white;
-  margin: 70px auto auto 80px;
+  margin: 10px auto auto 80px;
+}
+
+.left-content .heading {
+  margin-top: 100px;
 }
 
 .left-content .heading h1{
@@ -196,6 +207,22 @@ a:hover {
 
 a.text_strong {
   font-weight: 500;
+}
+
+a.in-text-hightlight:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: underline;
+}
+a.in-text-hightlight:visited {
+    color: #7F99D2;
+    background-color: transparent;
+    text-decoration: none;
+}
+a.in-text-hightlight:hover {
+    color: #E86B6B;
+    background-color: transparent;
+    text-decoration: underline;
 }
 
 .main-content {
