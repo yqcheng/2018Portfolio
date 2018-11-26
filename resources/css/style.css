@@ -141,13 +141,15 @@ li.navigation {
   display: flex;
   align-items: center;
   transition: all .1s ease-in-out;
+  height: 400px;
 }
 
 .main-content .section:hover {
   transform: scale(1.02);
 }
 
-.main-content .section img{
+/** movie eva img resize **/
+.main-content .first-section img{
   height: 400px;
   margin-left: 30px;
 }
@@ -193,8 +195,16 @@ li.navigation {
   box-shadow: 1px 5px 15px 0 #DDDFE2;
   border-radius: 29px;
   margin: 20px;
+}
 
+/**tech studio img resizing**/
+.main-content .second-section img {
+  width: 365px; /**can't use percentage bcz it's inside a element, which will leave a big margin**/
+}
 
+/**OVERRIDE!! .section for .second-section**/
+.second-section {
+  padding: 20px 50px 20px 0;
 }
 
 /******************************************************************************
