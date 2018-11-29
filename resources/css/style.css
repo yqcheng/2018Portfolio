@@ -52,7 +52,7 @@ body {
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 li.navigation {
   font-family: 'DIN-Light', Arial, sans-serif;
@@ -102,8 +102,6 @@ li.navigation {
   font-family: 'DIN-Light', Arial, sans-serif;
   font-size: 19px;
   opacity: 0.6;
-
-
 }
 
 .my-intro a.highlight-text{
@@ -127,7 +125,7 @@ li.navigation {
 .main-content {
   overflow: hidden;
   padding-top: 100px;
-  margin-bottom: 140px;
+  margin-bottom: 50px;
 }
 
 .main-content img{
@@ -207,6 +205,14 @@ li.navigation {
   padding: 20px 50px 20px 0;
 }
 
+/**copyright**/
+p.copyright {
+  text-align: center;
+  font-family: 'DIN-Light', Arial, sans-serif;
+  font-size: 14px;
+  opacity: 0.4;
+  padding: 2px 0;
+}
 /******************************************************************************
                          Responsiveness Media Queries
 *******************************************************************************/

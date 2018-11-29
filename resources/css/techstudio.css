@@ -41,13 +41,13 @@ body {
 
 }
 #full-bg {
-  background-color: #465983;
+  background-color: #F2ECDF;
   height: 100vh;
 
 }
 
 #mid-bg {
-  background-color: #5F78B1;
+  background-color: #CBB89E;
   height: 90%;
   width: 94%;
   margin-top: -95vh;
@@ -58,7 +58,7 @@ body {
 
 
 #inner-bg {
-  background-color: #465983;
+  background-color: #F2ECDF;
   height: 86.6%;
   width: 92.4%;
   margin-top: -88.4vh;
@@ -83,11 +83,11 @@ li.navigation {
 
 .navigation a{
   transition: border-bottom .4s ease;
-  color: white;
+  color: #4F483F;
 }
 
 .navigation a:hover{
-  border-bottom: 3px solid #E86B6B;
+  border-bottom: 3px solid #92C7BF;
   font-weight: 600;
 }
 
@@ -95,7 +95,7 @@ li.navigation {
   width: 22%;
   position: fixed;
   font-family: 'D-DIN', Arial, sans-serif;
-  color: white;
+  color: #4F483F;
   margin: 10px auto auto 80px;
 }
 
@@ -116,8 +116,8 @@ li.navigation {
   display: inline-block;
   font-size: 12px;
   font-weight: bold;
-  color: #465983;
-  background-color: white;
+  color: white;
+  background-color: #4F483F;
   border-radius: 300px;
   padding: 3px 8px;
 }
@@ -200,8 +200,8 @@ li.navigation {
 /** floating card bg**/
 .section {
   padding: 20px 50px;
-  background-color: #465983;
-  box-shadow: 0px 5px 14px 0px #354977;
+  background-color: #F2ECDF;
+  box-shadow: 0px 5px 14px 0px #CBB89E;
   border-radius: 29px;
   margin: 20px;
 }

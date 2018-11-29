@@ -52,7 +52,7 @@ body {
 nav ul {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 li.navigation {
   font-family: 'DIN-Light', Arial, sans-serif;
@@ -79,6 +79,10 @@ li.navigation {
 /******************************************************************************
                                cotent
 ******************************************************************************/
+.content {
+  margin-bottom: 50px;
+}
+
 .content img.resume {
   width: 50vw;
   display: block;
@@ -108,6 +112,14 @@ a.download-resume:hover {
     cursor: pointer;
 }
 
+/**copyright**/
+p.copyright {
+  text-align: center;
+  font-family: 'DIN-Light', Arial, sans-serif;
+  font-size: 14px;
+  opacity: 0.4;
+  padding: 2px 0;
+}
 /******************************************************************************
                          Responsiveness Media Queries
 *******************************************************************************/
